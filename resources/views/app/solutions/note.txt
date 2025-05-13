@@ -1,0 +1,32 @@
+    <div class="form-group col-sm-12">
+        <label class="label " for="categories_id">
+            Categories Id
+        </label>
+        <select id="categories_id" name="categories_id" class="form-control" autocomplete="off">
+            @php
+                $url = request()->fullUrl();  // Lấy URL hiện tại
+                $parts = explode('/', $url);  // Tách chuỗi
+                $lastPart = end($parts);  // Lấy phần tử cuối cùng    
+            @endphp
+            @if ($lastPart == 'edit')
+                @forelse($solution_categories as $item)
+                    @if ($item->id == old('solution1', ($editing ? $solution->categories_id : '')))
+                        <option value="{{ $item->id }}" selected>{{ $item->name }}</option>
+                    @elseif ($item->id != old('solution1', ($editing ? $solution->categories_id : '')))
+                        <option value="{{ $item->id }}">{{ $item->name }}</option>
+                    @endif
+                @empty
+                    <option value="">No categories available</option>
+                @endforelse
+            @else
+                <option selected>Open this select menu</option>
+                @forelse($solution_categories as $item)
+                    <option value="{{ $item->id }}">{{ $item->name }}</option>
+                @empty
+                    <option value="">No categories available</option>
+                @endforelse
+            @endif
+        <!-- <option selected>Open this select menu</option> -->
+
+        </select>
+    </div>

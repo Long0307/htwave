@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="images/style1.css"> -->
+</head>
+
+<body>
+  <div id="header" style="position: fixed; z-index: 2; opacity: 0.9;">
+    <div id="menu">
+      <img id="logo" src="images/ubicom.png" alt="">
+      <div id="list">
+        <ul>
+          <li>
+            <a class="active" href="">HOME</a>
+          </li>
+          <li>
+            <a href="">COMPANY</a>
+          </li>
+          <li>
+            <a href="">PRODUCT</a>
+          </li>
+          <li>
+            <a href="">TECHNOLOGY</a>
+          </li>
+          <li>
+            <a href="">SOLUTION</a>
+          </li>
+          <li>
+            <a href="">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="content" style="height:503px; z-index: 1; background-color: black; overflow: hidden;">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="position: relative;">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="" style="width: 100%; height: 100%;background-color: rgb(250, 250, 250);"></div>
+          <img class="imageForBanner" style="height: 560px !important;background-position: center;
+          background-repeat: no-repeat;background-size: cover;" src="images/backgrounnd.webp" class="d-block w-100 h-75" alt="images/backgrounnd.webp">
+          <div class="carousel-caption d-none d-md-block" 
+          style="width: 100%;height: 100%;background-color: black;position: absolute;
+          z-index: 1;opacity: 0.1;top: 0;left: 0;">
+          </div>
+          <main role="main" class="inner cover text-white text-center" style="width: 100%;position: absolute; top: 69%;">
+            <h1 class="cover-heading" style="font-size:32px;"><strong>CONTACT</strong></h1>
+            <p class="lead" style="font-size:18px;">Become Our Partner And Grow With Us</p>
+          </main>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="album py-5 py-5">
+    <div class="container">
+        <h5 style="color: #14326e; text-align: center;"><strong>INQUIRY</strong></h5>
+      <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 pb-3" id="solution">
+        <div class="col-md-6">
+            <img src="images/ubicom.png" style="width: 45%;" alt="">
+            <br>
+            <span style="font-size: 16px; line-height: 2rem; color: #59514d;; display: flex;">
+                <i class="material-icons" style="padding-top: 2px;">&#xe55f;</i>
+                <strong style="padding: 0 0 2px 10px;">Room 1107, 58 Ogeum-ro, Songpa-gu, Seoul (Sincheon-dong, Jamsil Ice Space)
+                </strong>
+            </span>
+            <br>
+            <span style="font-size: 16px; line-height: 2rem; color: #59514d; display: flex;">
+                <i class="material-icons" style="padding-top: 2px;">&#xe551;</i> 
+                <strong style="padding: 0 0 2px 10px;">070-8804-0648    (FAX) 02-6969-9048</strong>
+            </span>
+            <br>
+            <span style="font-size: 16px; line-height: 2rem; color: #59514d; display: flex;">
+                <i class="material-icons" style="padding-top: 2px;">&#xe0be;</i>
+                <strong style="padding: 0 0 2px 10px;">dkim2040@ubicomtech.com</strong>
+            </span>
+        </div>
+        <div class="col-md-6">
+            <form class="needs-validation" novalidate="">
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <!-- <label for="firstName" class="form-label">First name</label> -->
+                    <input type="text" class="form-control" id="firstName" placeholder="name *" value="" required="">
+                    <div class="invalid-feedback">
+                      Valid first name is required.
+                    </div>
+                  </div>
+      
+                  <div class="col-sm-6">
+                    <!-- <label for="lastName" class="form-label">Last name</label> -->
+                    <input type="text" class="form-control" id="lastName" placeholder="Email Address *" value="" required="">
+                    <div class="invalid-feedback">
+                      Valid last name is required.
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <!-- <label for="lastName" class="form-label">Last name</label> -->
+                    <input type="text" class="form-control" id="lastName" placeholder="Phone number *" value="" required="">
+                    <div class="invalid-feedback">
+                      Valid last name is required.
+                    </div>
+                  </div>
+                  <style>
+                    textarea {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                    }
+            
+                    /* Customize the placeholder text style */
+                    textarea::placeholder {
+                        padding-left: 15px;
+                        padding-top: 15px;
+                        /* Additional styling for the placeholder text */
+                        color: #888;
+                    }
+                </style>
+                  <div class="form-floating">
+                    <textarea placeholder="Inquiry *" style="height: 200px; width: 100%;"></textarea>
+                    <!-- <label for="floatingTextarea2">Comments</label> -->
+                  </div>
+      
+                <button style="width: 97%; margin: 0 auto; margin-top: 15px; background-color: #14326e; color: white; border: none; padding: 10px 0 10px 0;" type="submit">
+                    Send</button>
+              </form>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="album">
+    <div class="container" style="margin-bottom: 20px;">
+        <h5 style="color: #14326e; text-align: center;"><strong>LOCATION</strong></h5>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35804.344277991564!2d127.11116388313329!3d37.51530380091889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca57341c34601%3A0x9b3b9bccfa3c2487!2sJamsil%20I-Space!5e0!3m2!1svi!2skr!4v1718352477479!5m2!1svi!2skr" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="album py-5 py-5 border-top">
+    <div class="container">
+        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 pb-3" id="solution">
+          <div class="col-md-3">
+            <img src="images/ubicomTechnology.png" alt="">
+          </div>
+          <div class="col-md-6" style="color: #7d7d7d;">
+            <span>서울특별시 송파구 오금로 58, 잠실 I-SPACE 1107호</span><br>
+            <span>전화 : 070-8804-0648  |  팩스 : 02-6969-9048  </span><br>
+            <span>메일 : dkim2040@ubicomtech.com</span>
+          </div>
+          <div class="col-md-3 p-0 m-0">
+            <img src="images/Tomorow.jpg" class="float-end" alt="">
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="album py-5 bg-light py-5 border-top">
+    <div class="container">
+      <p style="color: #7d7d7d; text-align: center;"> © 2018 by Ubicom Technology Co.,Ltd.</p>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</html>

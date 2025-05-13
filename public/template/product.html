@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="images/style1.css"> -->
+</head>
+
+<body>
+  <div id="header" style="position: fixed; z-index: 2;">
+    <div id="menu">
+      <img id="logo" src="images/ubicom.png" alt="">
+      <div id="list">
+        <ul>
+          <li>
+            <a class="active" href="">HOME</a>
+          </li>
+          <li>
+            <a href="">COMPANY</a>
+          </li>
+          <li>
+            <a href="">PRODUCT</a>
+          </li>
+          <li>
+            <a href="">TECHNOLOGY</a>
+          </li>
+          <li>
+            <a href="">SOLUTION</a>
+          </li>
+          <li>
+            <a href="">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="content" style="height:787px; z-index: 1; background-color: black;">
+      <div class="carousel-inner">
+        <input type="hidden" name="linkVideoTest" id="linkVideoTest" value="https://www.youtube.com/watch?v=fPojDPaq_uU&feature=youtu.be">
+        <div class="carousel-item active" onclick="return linkVideoTest()" class="d-block w-100 h-100" style="height: 787px; position: relative; background-image: url('images/background-pro.png'); background-repeat: no-repeat; background-size: 100%;">
+            <div class="background-blue text-white py-5" style="text-align: center; position: absolute; width: 714px; height: 403px; background-color: #3aaed9; top: 28%; left: 30%;">
+                <h1 class="my-5">Ultrasonic Thickness Gauge</h1>
+                <h2 class="my-5">Ubicom Technology Inc</h2>
+                <img src="images/ubicom - Copy.png" style="" alt="" class="logo">
+            </div>
+            <h4 style="position: absolute; bottom: 13%; left: 38%; color:white;font-size:16px;">​Click on the image above to view the product test video.</h4   >
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="album py-5 py-5">
+    <div class="container">
+        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 pb-3" id="solution">
+          <div class="col-md-3">
+            <img src="images/ubicomTechnology.png" alt="">
+          </div>
+          <div class="col-md-6" style="color: #7d7d7d;">
+            <span>서울특별시 송파구 오금로 58, 잠실 I-SPACE 1107호</span><br>
+            <span>전화 : 070-8804-0648  |  팩스 : 02-6969-9048  </span><br>
+            <span>메일 : dkim2040@ubicomtech.com</span>
+          </div>
+          <div class="col-md-3 p-0 m-0">
+            <img src="images/Tomorow.jpg" class="float-end" alt="">
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="album py-5 bg-light py-5">
+    <div class="container">
+      <p style="color: #7d7d7d; text-align: center;"> © 2018 by Ubicom Technology Co.,Ltd.</p>
+    </div>
+  </div>
+</body>
+<script>
+    function linkVideoTest(){
+        window.location.href = document.getElementById("linkVideoTest").value
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</html>

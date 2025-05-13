@@ -1,0 +1,455 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    margin: auto;
+    width: 100%;
+}
+
+#header{
+    background-color: #e4e6ef;
+    /* background: transparent; */
+    height: 81px;
+    width: 100%;
+    margin: auto;
+}   
+
+#menu{
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+#logo{
+    margin: 13px 0 0 429px;
+    /* position: absolute; */
+    width: 171px;
+    height: 48px;
+    /* object-fit: cover; */
+}
+
+#list{
+    margin-left: 179px;
+    line-height: 81px;
+}
+
+#list ul li{
+    /* position: absolute; */
+    float: left;
+    list-style-type: none;
+    margin-left: 55px;
+}
+
+#list ul li a{
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    color: #9d9fa3;
+    font-size: 16px;
+}
+
+#list ul li a.active{
+    color: #2bb6c7;
+}
+
+.imageForBanner{
+    height:677px;
+    width:100%;
+}
+
+.carousel-dark {
+    /* Đổi màu nền thành tối */
+    background-color: #333;
+    
+    /* Đổi màu chữ thành sáng */
+    color: #fff;
+}
+
+.text-center {
+    text-align: center !important;
+    margin-top: 0px !important;
+    display: block;
+    margin: 18% auto;
+}
+
+.carousel-dark .carousel-indicators.bg-dark {
+    background-color: #000;
+}
+
+.overlay {
+    position: absolute; /* Đặt vị trí tuyệt đối cho lớp phủ */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(29, 90, 90, 0.5); /* Màu đen mờ với độ mờ 0.5 */
+    z-index: 1; /* Đảm bảo lớp phủ nằm trên carousel */
+}
+
+#contact{
+    /* width: 981px;
+    height: 600px; */
+    margin: 0 auto;
+}
+
+.years{
+    width: 300px; height: 350px; position: relative;
+}
+
+#years{
+    text-align: center;
+    position: absolute;
+    top: 33%;
+    left: 36%;
+    z-index: 5;
+}
+
+.layer1, .layer2, .layer3, .layer4,.layer5, .layer6, .layer7, .layer8,.layer9, .layer10, .layer11, .layer12 {
+    position: absolute !important;
+}
+
+#solution{
+    width: 981px;
+    margin: 0 auto;
+}
+
+#navbar{
+    display: none;
+}
+
+#formobile{
+    text-align: center !important;
+    margin-top: 0px !important;
+    display: block;
+    margin: 10% auto; 
+    z-index: 1;
+}
+
+.technologies{
+    background-color: #14326e; 
+    width: 95%; 
+    min-height:415px;
+}
+
+#backgroundForProduct{
+    height: 787px; 
+    position: relative;
+    background-repeat: no-repeat; 
+    background-size: 100%;
+}
+
+#fortext{
+    text-align: center; 
+    position: absolute; 
+    width: 714px; 
+    height: 403px; 
+    top: 28%; 
+    left: 30%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+    *{
+        margin: 0;
+        padding: 0;
+        font-family:Arial,Helvetica,sans-serif;
+    }
+    
+    body{
+        margin: auto;
+        width: 100%;
+    }
+    
+    #header{
+        background-color: #e4e6ef;
+        /* background: transparent; */
+        height: 81px;
+        width: 100%;
+        margin: auto;
+    }   
+    
+    #menu{
+        height: 81px;
+        width: 100%;
+        margin: 0 auto;
+        display: none;
+    }
+    
+    #logo{
+        margin: -4px 0 11px 0;
+        /* position: absolute; */
+        width: 171px;
+        height: 48px;
+        /* object-fit: cover; */
+    }
+    
+    #navbar{
+        /* height: 100%;
+         */
+        background-color: #e4e6ef;
+        display: block;
+    }
+
+    #solution{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #col-12-logo{
+        width: 50%;
+        margin-bottom: 15px;
+
+    }
+
+    #col-12{
+        width: 100%;
+    }
+
+    #formobile{
+        text-align: center !important;
+        margin-top: 0px !important;
+        display: block;
+        margin: 42% auto;
+        z-index: 1;
+    }
+
+    #image-fix{
+        /* border-right: 1px solid white; */
+        width: 100%;
+    }
+
+    .technologies{
+        background-color: #14326e; width: 100% !important; min-height:415px;
+    }
+
+    #backgroundForProduct{
+        height: 787px; 
+        position: relative;
+        background-repeat: no-repeat; 
+        background-size: 100% 100%;
+    }
+
+    #fortext{
+        text-align: center; 
+        position: absolute; 
+        width: 100%; 
+        height: 403px; 
+        top: 28%; 
+        left: 0%;
+    }
+
+    #contact{
+        margin: 0 auto;
+    }
+
+    #contact-fix{
+        width: 100%;
+    }
+}
+  
+/* Extra small devices (phones, 600px and down) */
+@media (min-width: 600px) and (max-width: 800px) {
+    
+    *{
+        margin: 0;
+        padding: 0;
+        font-family:Arial,Helvetica,sans-serif;
+    }
+    
+    body{
+        margin: auto;
+        width: 100%;
+    }
+    
+    #header{
+        background-color: #e4e6ef;
+        /* background: transparent; */
+        height: 81px;
+        width: 100%;
+        margin: auto;
+    }   
+    
+    #menu{
+        height: 81px;
+        width: 100%;
+        margin: 0 auto;
+        display: none;
+    }
+    
+    #logo{
+        margin: -4px 0 11px 0;
+        /* position: absolute; */
+        width: 171px;
+        height: 48px;
+        /* object-fit: cover; */
+    }
+    
+    #navbar{
+        /* height: 100%;
+         */
+        background-color: #e4e6ef;
+        display: block;
+    }
+
+    #solution{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #col-12-logo{
+        width: 50%;
+        margin-bottom: 15px;
+
+    }
+
+    #col-12{
+        width: 100%;
+    }
+
+    #formobile{
+        text-align: center !important;
+        margin-top: 0px !important;
+        display: block;
+        margin: 27% auto;
+        z-index: 1;
+    }
+
+    #image-fix{
+        /* border-right: 1px solid white; */
+        width: 100%;
+    }
+
+    .technologies{
+        background-color: #14326e; width: 100% !important; min-height:415px;
+    }
+
+    #backgroundForProduct{
+        height: 787px; 
+        position: relative;
+        background-repeat: no-repeat; 
+        background-size: 100% 100%;
+    }
+
+    #fortext{
+        text-align: center; 
+        position: absolute; 
+        width: 100%; 
+        height: 403px; 
+        top: 28%; 
+        left: 0%;
+    }
+
+    #contact{
+        margin: 0 auto;
+    }
+
+    #contact-fix{
+        width: 100%;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1024px) {
+    
+    *{
+        margin: 0;
+        padding: 0;
+        font-family:Arial,Helvetica,sans-serif;
+    }
+    
+    body{
+        margin: auto;
+        width: 100%;
+    }
+    
+    #header{
+        background-color: #e4e6ef;
+        /* background: transparent; */
+        height: 81px;
+        width: 100%;
+        margin: auto;
+    }   
+    
+    #menu{
+        height: 81px;
+        width: 100%;
+        margin: 0 auto;
+        display: none;
+    }
+    
+    #logo{
+        margin: -4px 0 11px 0;
+        /* position: absolute; */
+        width: 171px;
+        height: 48px;
+        /* object-fit: cover; */
+    }
+    
+    #navbar{
+        /* height: 100%;
+         */
+        background-color: #e4e6ef;
+        display: block;
+    }
+
+    #solution{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #col-12-logo{
+        width: 50%;
+        margin-bottom: 15px;
+
+    }
+
+    #col-12{
+        width: 100%;
+    }
+
+    #formobile{
+        text-align: center !important;
+        margin-top: 0px !important;
+        display: block;
+        margin: 27% auto;
+        z-index: 1;
+    }
+
+    #image-fix{
+        /* border-right: 1px solid white; */
+        width: 100%;
+    }
+
+    .technologies{
+        background-color: #14326e; width: 100% !important; min-height:415px;
+    }
+
+    #backgroundForProduct{
+        height: 787px; 
+        position: relative;
+        background-repeat: no-repeat; 
+        background-size: 100% 100%;
+    }
+
+    #fortext{
+        text-align: center; 
+        position: absolute; 
+        width: 100%; 
+        height: 403px; 
+        top: 28%; 
+        left: 0%;
+    }
+
+    #contact{
+        margin: 0 auto;
+    }
+
+    #contact-fix{
+        width: 100%;
+    }
+}
+
